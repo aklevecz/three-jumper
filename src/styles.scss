@@ -1,0 +1,40 @@
+$button-width: 100px;
+
+button {
+  cursor: pointer;
+  background: white;
+  padding: 20px;
+  position: absolute;
+
+  &#start-button {
+    left: 50%;
+    top: 50%;
+    margin-left: calc(#{$button-width} / 2 * -1);
+    margin-top: calc(#{$button-width} / 2 * -1);
+    width: $button-width;
+    height: $button-width;
+  }
+
+  &#pause-button {
+    left: 100%;
+    width: 100px;
+    margin-left: -100px;
+    font-family: monospace;
+    color: white;
+    font-weight: bold;
+    background: none;
+    border: none;
+    border: white;
+  }
+}
+#score-board {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100px;
+  font-family: monospace;
+  font-size: 45px;
+  color: white;
+  pointer-events: none;
+}
